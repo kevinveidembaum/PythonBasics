@@ -1,8 +1,10 @@
 TAXA_DESCONTO = 0.05
 
 def main():
+    print("-="*25)
     preco = float(input("Digite o valor do produto: R$"))
     desconto(preco)
+    print("-="*25)
 
 def desconto(preco):
     if(preco > 100.00):
