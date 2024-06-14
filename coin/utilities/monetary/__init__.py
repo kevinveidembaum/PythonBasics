@@ -11,7 +11,7 @@ def reajuste(preco, taxa, aumentar=False, format=True):
 
     if aumentar:
         res = preco + (preco * taxa/100)
-        return res
+        return res if format is False else formatacao(res)
     else:
         res = preco - (preco * taxa/100)
         return res if format is False else formatacao(res)
