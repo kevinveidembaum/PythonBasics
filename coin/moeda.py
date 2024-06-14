@@ -32,3 +32,11 @@ def metade(preco):
 
     res = preco/2
     return res
+
+
+def formatacao(moeda):
+    """
+    return the formatted number
+    """
+
+    return f'R${moeda:.2f}'.replace('.', ',')
